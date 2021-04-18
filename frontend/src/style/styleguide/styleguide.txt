@@ -1,0 +1,36 @@
+##color
+
+blue: rgb(1, 30, 65);
+gray: rgb(212, 213, 214);
+gray: rgb(233, 234, 234);
+text color light: rgb(255, 255, 255);
+text color dark: rgb(0, 0, 0);
+
+shadow: 0 0 35px rgba(0,0,0,0.1);
+
+
+##font
+
+#Header
+font-family: 'Encode Sans', sans-serif;
+Regular 400
+Medium 500
+Semi-bold 600
+Bold 700
+
+#Content
+font-family: 'Roboto', sans-serif;
+Light 300
+Regular 400
+Medium 500
+
+
+##Window break
+800px
+560px
+300px
+
+    /* background-image: linear-gradient(
+180deg,rgba(30,37,46,0) 30%,rgba(30,37,46,.8) 75%,#1e252e 84%);*/
+
+#fonts, border radiuses, stb

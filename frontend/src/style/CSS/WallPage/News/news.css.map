@@ -1,0 +1,11 @@
+{
+  "version": 3,
+  "sourceRoot": "",
+  "sources": [
+    "../../../SCSS/WallPage/News/news.scss",
+    "../../../SCSS/_variables.scss"
+  ],
+  "names": [],
+  "mappings": "AAEA;EACE;EACA;EACA;EACA;EACA;EACA;EACA;;AAEA;EATF;IAUI;;;AAGF;EAbF;IAcI;;;AAGF;EAjBF;IAkBI;;;AAGF;EACE,YCjBK;EDkBL;EACA;EACA;EACA;EACA;;AAEA;EACE;EACA;EACA,kBChCM;EDiCN;EACA;;AAEA;EAPF;IAQI;;;AAGJ;EACE;EACA;EACA;EACA;EACA;EACA;EACA;;AAIF;EACE,OCjDO;EDkDP,kBCvDK;EDwDL;EACA;EACA;;AAEA;EAPF;IAQI;;;AAGF;EACE,OC5DK;ED6DL;;AAGF;EACE",
+  "file": "news.css"
+}

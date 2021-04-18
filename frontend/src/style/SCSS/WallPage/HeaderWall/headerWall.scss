@@ -1,0 +1,23 @@
+@use '../variables' as *;
+
+.wall-landing {
+  width: 100%;
+  height: 200px;
+  text-align: center;
+
+  .socialMedia {
+    height: 70px;
+    color: $lightColor;
+    background-color: $mainBlue;
+  }
+
+  .name {
+    height: 85px;
+    border-bottom: 1px solid $mainBlue;
+  }
+
+  nav {
+    height: 45px;
+    border-bottom: 1px solid $mainBlue;
+  }
+}

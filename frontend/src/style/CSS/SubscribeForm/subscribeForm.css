@@ -1,0 +1,42 @@
+.subscribe-form {
+  width: 92%;
+  background-color: white;
+  border: 2px #011e41;
+  border-style: solid none solid solid;
+  margin: 20px 0 0 8%;
+  padding: 30px 0 30px 2.5%;
+  grid-column: 1/span 1;
+  grid-row: 1/span 1;
+}
+.subscribe-form #follow-news {
+  font-size: 1.2em;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+.subscribe-form .inputs input {
+  width: 45%;
+  background-color: #e9eaea;
+  padding: 10px;
+}
+.subscribe-form .inputs input[type=text] {
+  margin-right: 20px;
+}
+.subscribe-form .check-top {
+  margin-top: 10px;
+}
+.subscribe-form .check input[type=checkbox] {
+  margin-right: 5px;
+}
+.subscribe-form .check label {
+  margin-right: 2px;
+}
+.subscribe-form button {
+  width: 95%;
+  color: white;
+  background-color: #011e41;
+  margin-top: 20px;
+  padding: 10px;
+  font-weight: bold;
+}
+
+/*# sourceMappingURL=subscribeForm.css.map */

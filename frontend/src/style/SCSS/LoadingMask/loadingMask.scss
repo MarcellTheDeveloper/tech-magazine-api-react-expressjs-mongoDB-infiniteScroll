@@ -1,0 +1,284 @@
+@use "../variables" as *;
+
+.box-container {
+  height: 40vh;
+  background-color: $lightGray;
+  margin: 5rem 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  position: relative;
+  overflow-x: hidden;
+
+  .box {
+    width: 250px;
+    height: 40vh;
+    min-height: 240px;
+    background-color: $lightColor;
+    margin: 0 10px;
+    
+    display: block;
+    position: absolute;
+    top: 0;
+    overflow-x: hidden;
+
+    @media (max-width: 810px) {
+      margin: 10px;
+    }
+
+    p {
+      color: $mainBlue;
+      margin-top: 15%;
+      font-size: 1.2rem;
+      font-weight: 500;
+      text-align: center;
+    }
+
+    .tech-image {
+      width: 200px;
+      height: 200px;
+      margin: auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .tech {
+      margin-left: 34px;
+    }
+
+    .know {
+      margin-top: 14px;
+    }
+
+    .fun {
+      margin-top: -8px;
+    }
+  }
+
+  #technology {
+    animation-timing-function: ease-in-out;
+    animation: moveAcrossTech 20s ease-in-out infinite;
+    left: calc(100vw - 50%);
+    transform: translate(-50%);
+  }
+
+  
+
+  #technology2 {
+    animation-timing-function: ease-in-out;
+    animation: moveAcrossTech2 20s 11s ease-in-out infinite;
+    left: calc(100vw - 0%);
+  }
+
+  #knowledge {
+    animation-timing-function: ease-in-out;
+    animation: moveAcrossKnow 20s ease-in-out infinite;
+    left: calc(100vw - 75%);
+    transform: translate(-50%);
+  }
+
+  #knowledge2 {
+    animation-timing-function: ease-in-out;
+    animation: moveAcrossKnow2 20s 2s ease-in-out infinite;
+    left: calc(100vw - 0%);
+  }
+
+  #fun {
+    animation-timing-function: ease-in-out;
+    animation: moveAcrossFun 20s ease-in-out infinite;
+    left: calc(100vw - 25%);
+    transform: translate(-50%);
+  }
+
+  #fun2 {
+    animation-timing-function: ease-in-out;
+    animation: moveAcrossFun2 20s 2s ease-in-out infinite;
+    left: calc(100vw - 0%);
+  }
+}
+
+
+//keyframes
+@keyframes moveAcrossTech {
+  0% {
+    left: calc(100vw - 50%);
+  }
+  30% {
+    left: calc(100vw - 75%);
+  }
+  50% {
+    left: calc(100vw - 75%);
+  }
+  70% {
+    left: calc(100vw - 125%);
+  }
+  100% {
+    left: calc(100vw - 150%);
+  }
+}
+
+@keyframes moveAcrossTech2 {
+  0% {
+    left: calc(100vw - 0%);
+  }
+  20% {
+    left: calc(100vw - 25%);
+    transform: translate(-50%);
+  }
+  45% {
+    left: calc(100vw - 50%);
+    transform: translate(-50%);
+    width: 250px;
+    height: 40vh;
+  }
+  50% {
+    left: calc(100vw - 75%);
+    transform: translate(-50%);
+  }
+  80% {
+    left: calc(100vw - 75%);
+    transform: translate(-50%);
+  }
+  90% {
+    left: calc(100vw - 75%);
+    transform: translate(-50%);
+    color: $lightColor;
+    background-color: $lightColor;
+    z-index: -1;
+  }
+  100% {
+    left: calc(100vw - 75%);
+    transform: translate(-50%);
+    color: $lightColor;
+    background-color: $lightColor;
+    z-index: -1;
+  }
+}
+
+@keyframes moveAcrossKnow {
+  0% {
+    left: calc(100vw - 75%);
+  }
+  30% {
+    left: calc(100vw - 125%);
+  }
+  50% {
+    left: calc(100vw - 125%);
+  }
+  70% {
+    left: calc(100vw - 150%);
+  }
+  100% {
+    left: calc(100vw - 175%);
+  }
+}
+
+@keyframes moveAcrossKnow2 {
+  0% {
+    left: calc(100vw - 0%);
+  }
+  20% {
+    left: calc(100vw - 25%);
+    transform: translate(-50%);
+  }
+  40% {
+    left: calc(100vw - 25%);
+    transform: translate(-50%);
+  }
+  65% {
+    left: calc(100vw - 50%);
+    transform: translate(-50%);
+  }
+  66% {
+    left: calc(100vw - 50%);
+    transform: translate(-50%);
+  }
+  90% {
+    left: calc(100vw - 75%);
+    transform: translate(-50%);
+    background-color: $lightColor;
+    color: $mainBlue;
+    z-index: 2;
+  }
+  91% {
+    left: calc(100vw - 75%);
+    transform: translate(-50%);
+    color: $lightColor;
+    background-color: $lightColor;
+    z-index: -1;
+  }
+
+  100% {
+    left: calc(100vw - 100%);
+    transform: translate(-50%);
+    color: $lightColor;
+    background-color: $lightColor;
+    z-index: -1;
+  }
+}
+
+@keyframes moveAcrossFun {
+  0% {
+    left: calc(100vw - 25%);
+  }
+  30% {
+    left: calc(100vw - 50%);
+  }
+  50% {
+    left: calc(100vw - 50%);
+  }
+  70% {
+    left: calc(100vw - 75%);
+  }
+  100% {
+    left: calc(100vw - 125%);
+  }
+}
+
+@keyframes moveAcrossFun2 {
+  0% {
+    left: calc(100vw - 0%);
+    transform: translate(-50%);
+    background-color: $lightColor;
+    color: $mainBlue;
+    z-index: -1;
+  }
+  40% {
+    left: calc(100vw - 0%);
+    transform: translate(-50%);
+    background-color: $lightColor;
+    color: $mainBlue;
+    z-index: -1;
+  }
+  70% {
+    left: calc(100vw - 0%);
+    transform: translate(-50%);
+    background-color: $lightColor;
+    color: $mainBlue;
+    z-index: -1;
+  }
+
+  90% {
+    left: calc(100vw - 25%);
+    transform: translate(-50%);
+    background-color: $lightColor;
+    color: $mainBlue;
+    z-index: 2;
+  }
+  91% {
+    left: calc(100vw - 25%);
+    transform: translate(-50%);
+    color: $lightColor;
+    background-color: $lightColor;
+    z-index: -1;
+  }
+
+  100% {
+    left: calc(100vw - 100%);
+    transform: translate(-50%);
+    color: $lightColor;
+    background-color: $lightColor;
+    z-index: -1;
+  }
+}

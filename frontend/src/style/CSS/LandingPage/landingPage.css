@@ -1,0 +1,94 @@
+.landing-page {
+  overflow: hidden;
+}
+.landing-page .top-part {
+  width: 100%;
+  height: 90vh;
+  display: grid;
+  grid-template-columns: 2fr 6fr 2fr;
+  grid-template-rows: 2fr 1fr 2fr 2fr 1fr;
+}
+.landing-page .top-part .left {
+  background-color: #e9eaea;
+  grid-column: 1/span 1;
+  grid-row: 1/span 3;
+}
+.landing-page .top-part .middle-top {
+  background-color: #e9eaea;
+  grid-column: 2/span 1;
+  grid-row: 1/span 1;
+}
+.landing-page .top-part .middle {
+  background-color: #011e41;
+  box-shadow: 0 0 35px rgba(0, 0, 0, 0.1);
+  grid-column: 2/span 1;
+  grid-row: 2/span 4;
+  z-index: 2;
+}
+.landing-page .top-part .middle .content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transform: translate(0, 15%);
+  height: 100%;
+}
+.landing-page .top-part .middle .content p {
+  color: white;
+  margin: 5px;
+  font-size: 2rem;
+  text-align: center;
+}
+@media (max-width: 425px) {
+  .landing-page .top-part .middle .content p {
+    font-size: 1.5rem;
+  }
+}
+.landing-page .top-part .middle .content #bigger-margin {
+  margin: 20px 0 15px;
+}
+.landing-page .top-part .middle .content button {
+  width: 80%;
+  color: #011e41;
+  background-color: white;
+  margin-top: 30px;
+  padding: 10px;
+  font-weight: bold;
+}
+.landing-page .top-part .right {
+  background-color: #e9eaea;
+  grid-column: 3/span 1;
+  grid-row: 1/span 3;
+}
+.landing-page .ribbon {
+  width: 100%;
+  height: 80vh;
+  min-height: 40vh;
+  background-color: #e9eaea;
+  margin: 10rem 0;
+}
+.landing-page .ribbon .content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transform: translate(0, 15%);
+  align-items: flex-start;
+}
+.landing-page .ribbon .content p,
+.landing-page .ribbon .content a {
+  margin-top: 8px;
+  margin-right: 5px;
+  margin-left: 50px;
+  font-size: 1.4em;
+  font-weight: 500;
+  text-align: center;
+}
+@media (max-width: 320px) {
+  .landing-page .ribbon .content p,
+.landing-page .ribbon .content a {
+    margin-left: 15px;
+  }
+}
+
+/*# sourceMappingURL=landingPage.css.map */

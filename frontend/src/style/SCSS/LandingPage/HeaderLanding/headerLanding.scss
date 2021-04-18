@@ -1,0 +1,48 @@
+@use "../../variables" as *;
+
+.header-landing {
+  width: 100%;
+  height: 70px;
+  background-color: $mainBlue;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @media (max-width: 415px) {
+    justify-content: left;
+    padding-left: 6rem;
+  }
+  
+  img {
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    left: 1rem;
+  }
+
+  h1 {
+		justify-content: center;
+    font-weight: 700;
+    color: $lightColor;
+    position: relative;
+  }
+
+  #long-JSP {
+    @media (max-width: 350px) {
+      display: none;
+    }
+  }
+
+  h1::after {
+    content: "JSP";
+    color: $lightColor;
+    display: none;
+    position: relative;
+    left: 100%;
+
+    @media (max-width: 350px) {
+      display: block;
+    }
+  }
+}

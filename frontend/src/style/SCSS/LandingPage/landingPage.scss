@@ -1,0 +1,97 @@
+@use '../variables' as *;
+@use '../mixins' as *;
+
+.landing-page {
+overflow: hidden;
+
+  .top-part {
+    width: 100%;
+    height: 90vh;
+    display: grid;
+    grid-template-columns: 2fr 6fr 2fr;
+    grid-template-rows: 2fr 1fr 2fr 2fr 1fr;
+
+    .left {
+      background-color: $lightGray;
+      grid-column: 1 / span 1;
+      grid-row: 1 / span 3;
+    }
+
+    .middle-top {
+      background-color: $lightGray;
+      grid-column: 2 / span 1;
+      grid-row: 1 / span 1;
+    }
+
+    .middle {
+      background-color: $mainBlue;
+      box-shadow: $shadow;
+      grid-column: 2 / span 1;
+      grid-row: 2 / span 4;
+      z-index: 2;
+
+      .content {
+        @include middle-middle;
+
+        height: 100%;
+
+        p {
+          color: $lightColor;
+          margin: 5px;
+          font-size: 2rem;
+          text-align: center;
+
+          @media (max-width: 425px) {
+            font-size: 1.5rem;
+          }
+        }
+
+        #bigger-margin {
+          margin: 20px 0 15px;
+        }
+
+        button {
+          width: 80%;
+          color: $mainBlue;
+          background-color: $lightColor;
+          margin-top: 30px;
+          padding: 10px;
+          font-weight: bold;
+        }
+      }
+    }
+
+    .right {
+      background-color: $lightGray;
+      grid-column: 3 / span 1;
+      grid-row: 1 / span 3;
+    }
+  }
+
+  .ribbon {
+    width: 100%;
+    height: 80vh;
+    min-height: 40vh;
+    background-color: $lightGray;
+    margin: 10rem 0;
+
+    .content {
+      @include middle-middle;
+      align-items: flex-start;
+
+      p,
+      a {
+        margin-top: 8px;
+        margin-right: 5px;
+        margin-left: 50px;
+        font-size: 1.4em;
+        font-weight: 500;
+        text-align: center;
+
+        @media (max-width: 320px) {
+          margin-left: 15px;
+        }
+      }
+    }
+  }
+}

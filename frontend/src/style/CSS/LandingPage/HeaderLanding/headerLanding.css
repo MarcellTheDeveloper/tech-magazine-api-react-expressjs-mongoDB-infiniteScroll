@@ -1,0 +1,46 @@
+.header-landing {
+  width: 100%;
+  height: 70px;
+  background-color: #011e41;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media (max-width: 415px) {
+  .header-landing {
+    justify-content: left;
+    padding-left: 6rem;
+  }
+}
+.header-landing img {
+  height: 50px;
+  width: 50px;
+  position: absolute;
+  left: 1rem;
+}
+.header-landing h1 {
+  justify-content: center;
+  font-weight: 700;
+  color: white;
+  position: relative;
+}
+@media (max-width: 350px) {
+  .header-landing #long-JSP {
+    display: none;
+  }
+}
+.header-landing h1::after {
+  content: "JSP";
+  color: white;
+  display: none;
+  position: relative;
+  left: 100%;
+}
+@media (max-width: 350px) {
+  .header-landing h1::after {
+    display: block;
+  }
+}
+
+/*# sourceMappingURL=headerLanding.css.map */
